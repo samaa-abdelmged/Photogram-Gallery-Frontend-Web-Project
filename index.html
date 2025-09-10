@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photogram Gallery</title>
+
+    <!-- Google Font for heading -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Gallery Heading -->
+    <h1 class="gallery-heading">Photogram Gallery</h1>
+
+    <!-- 3x3 Gallery Grid -->
+    <div class="gallery">
+        <!-- Each image has a caption -->
+        <div class="gallery-item">
+            <img src="images/1.jpg" alt="Sample 1" onclick="openModal(this)">
+            <p class="caption">Nature 1</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/2.jpg" alt="Sample 2" onclick="openModal(this)">
+            <p class="caption">Nature 2</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/3.jpg" alt="Sample 3" onclick="openModal(this)">
+            <p class="caption">Nature 3</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/4.jpg" alt="Sample 4" onclick="openModal(this)">
+            <p class="caption">Nature 4</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/5.jpg" alt="Sample 5" onclick="openModal(this)">
+            <p class="caption">Nature 5</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/6.jpg" alt="Sample 6" onclick="openModal(this)">
+            <p class="caption">Nature 6</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/7.jpg" alt="Sample 7" onclick="openModal(this)">
+            <p class="caption">Nature 7</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/8.jpg" alt="Sample 8" onclick="openModal(this)">
+            <p class="caption">Nature 8</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/9.jpg" alt="Sample 9" onclick="openModal(this)">
+            <p class="caption">Nature 9</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Close button -->
+        <span class="close" onclick="closeModal()">&times;</span>
+        <!-- Enlarged image -->
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
